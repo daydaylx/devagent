@@ -1,0 +1,109 @@
+/* DevAgent GUI Styles */
+
+Screen {
+    background: $surface;
+}
+
+#main-container {
+    height: 100%;
+    margin: 0;
+}
+
+.tab-content {
+    padding: 1;
+    height: 100%;
+}
+
+.tab-title {
+    text-style: bold;
+    color: $primary;
+    margin-bottom: 1;
+}
+
+.input-group {
+    height: 3;
+    margin-bottom: 1;
+}
+
+.input-group Input {
+    width: 3fr;
+}
+
+.input-group Button {
+    width: 1fr;
+    margin-left: 1;
+}
+
+.button-group {
+    height: 3;
+    margin-bottom: 1;
+}
+
+.button-group Button {
+    width: 1fr;
+    margin-right: 1;
+}
+
+Button {
+    min-width: 12;
+}
+
+Input {
+    margin-bottom: 1;
+}
+
+TextArea {
+    margin-bottom: 1;
+    height: 10;
+    border: solid $primary;
+}
+
+DataTable {
+    height: 1fr;
+    margin-top: 1;
+}
+
+#scan-progress,
+#check-progress,
+#propose-progress,
+#patch-progress {
+    height: 3;
+    margin: 1;
+    padding: 1;
+    border: solid $secondary;
+    background: $surface-darken-1;
+}
+
+#propose-results {
+    height: 15;
+    margin-top: 1;
+}
+
+#patch-results {
+    height: 10;
+}
+
+Tabs {
+    dock: top;
+}
+
+TabPane {
+    padding: 1;
+}
+
+/* Status colors */
+.success {
+    color: $success;
+}
+
+.error {
+    color: $error;
+}
+
+.warning {
+    color: $warning;
+}
+
+.info {
+    color: blue;
+}

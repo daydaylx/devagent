@@ -1,0 +1,22 @@
+Response Format Requirements:
+Your response must be structured exactly as follows:
+
+**ANALYSIS**
+[Your analysis of the current state and requirements]
+
+**PLAN**
+[Step-by-step plan of changes needed]
+
+**PATCH**
+```diff
+[Complete unified diff with proper headers and hunks]
+COMMIT MESSAGE
+[Clear, conventional commit message]
+
+TEST PLAN
+[How to test and verify the changes]
+
+ROLLBACK
+[How to rollback if issues arise]
+
+The PATCH section must contain a valid unified diff that can be applied with git apply.

@@ -1,0 +1,42 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "devagent-cli"
+version = "1.1.0"
+description = "Clean-room OpenRouter-powered development agent CLI + Textual TUI (safe patching, Git-aware)."
+readme = "README.md"
+authors = [{ name = "DevAgent CLI", email = "devagent@example.com" }]
+license = { file = "LICENSE" }
+requires-python = ">=3.11"
+classifiers = [
+  "Development Status :: 5 - Production/Stable",
+  "Environment :: Console",
+  "Intended Audience :: Developers",
+  "License :: OSI Approved :: MIT License",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.11",
+  "Topic :: Software Development :: Build Tools",
+]
+dependencies = [
+  "typer>=0.12.3",
+  "rich>=13.7.1",
+  "httpx>=0.27.0",
+  "python-dotenv>=1.0.1",
+  "unidiff>=0.7.5",
+  "textual>=0.58,<0.59",
+]
+
+[project.urls]
+Homepage = "https://example.com/devagent-cli"
+
+[project.scripts]
+devagent = "devagent.cli:app"
+devagent-tui = "devagent.tui.app:run"
+
+[tool.setuptools]
+packages = { find = { where = ["src"] } }
+
+[tool.setuptools.package-data]
+"devagent" = ["prompts/*.md"]
