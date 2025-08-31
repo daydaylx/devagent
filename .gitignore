@@ -1,0 +1,12 @@
+__pycache__/
+*.pyc
+.venv/
+.env
+.devagent/
+dist/
+build/
+.eggs/
+*.egg-info/
+coverage/
+node_modules/
+.devagent/credentials.toml

@@ -1,0 +1,14 @@
+[run]
+source = src/devagent
+omit =
+    */tests/*
+    */.venv/*
+    */site-packages/*
+    src/devagent/repl.py
+    src/devagent/llm.py
+    src/devagent/transcript.py
+
+[report]
+show_missing = True
+skip_covered = False
+fail_under = 75

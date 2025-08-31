@@ -1,0 +1,12 @@
+Ziel:
+{{GOAL}}
+
+Workspace: {{WORKSPACE}}
+
+Erlaubte Befehle: {{ALLOWLIST}}
+Git-Repo vorhanden: {{HAS_GIT}}
+
+Projektkarte (Auszug):
+{{PROJECT_CARD}}
+
+Erzeuge einen präzisen Aktionsplan (siehe Systemvorgaben).

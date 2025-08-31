@@ -1,0 +1,5 @@
+Führe die Test-Suite aus und behebe belegte Fehler. Minimal-invasive Fixes.
+- Python: "pytest -q"
+- JS/TS: "npm test --silent" o. der Testrunner aus package.json
+
+Regeln wie in Lint-Fix. YAML-Ausgabe gemäß Schema.

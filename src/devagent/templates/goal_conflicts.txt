@@ -1,0 +1,8 @@
+Ziel: Offene Git-Merge-Konflikte minimal-invasiv auflösen und verifizieren.
+
+Vorgehen:
+- "git status", "git diff --name-only --diff-filter=U"
+- Konfliktmarker entfernen, kleinste sinnvolle Auswahl.
+- Danach relevante Checks (pytest/tsc/eslint).
+
+Regeln: keine Netzaktivität, keine großen Refactorings. YAML-Ausgabe gemäß Schema.

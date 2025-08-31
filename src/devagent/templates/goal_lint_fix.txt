@@ -1,0 +1,18 @@
+Analysiere den Projektstack (Python/TS/JS/…) anhand der Projektkarte.
+Erzeuge einen minimal-invasiven Aktionsplan, um KONKRET gemeldete Fehler zu beheben.
+
+Checks AUSFÜHREN (nur wenn im Projekt relevant/verfügbar):
+- Python: "pytest -q", "ruff .", "mypy"
+- TypeScript/React: "tsc -p tsconfig.json --noEmit", "eslint ."
+- Node/JS: "eslint ."
+- Optional: "black --check ."
+
+Regeln:
+- Nur eindeutig belegte Fehler beheben (Fehlermeldungen zitieren).
+- Kleinste Änderungen, keine riskanten Refactorings.
+- Konfigs nur minimal ändern, wenn zwingend.
+- KEINE Netzaktivität/Paketinstallationen.
+- Edits als Patch bevorzugen.
+- Max 20 Aktionen.
+
+Verifikation: Relevante Checks erneut laufen lassen. YAML-Ausgabe gemäß Schema.

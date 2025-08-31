@@ -1,0 +1,5 @@
+Ziel: Schnelles Code-Review mit Fokus auf konkrete Bugs, Typ-/Lint-Probleme
+und minimal-invasive Verbesserungen. YAML-Ausgabe gemäß Schema.
+
+Checks: pytest/ruff/mypy/eslint/tsc (falls vorhanden).
+Regeln: kleinste Änderung zuerst, keine Architektur-Umstellungen, kein Netz.
